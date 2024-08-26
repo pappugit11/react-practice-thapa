@@ -1,0 +1,162 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #212121;
+  color: #fff;
+}
+
+
+.toggle_wrapper{
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+.toggle_btn{
+  background-color: grey;
+  border-radius: 60px;
+  height: 60px;
+  width: 150px;
+  border: 0;
+  text-align: left;
+  position: relative;
+}
+.toggle_btn_text{
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+/* ------------  */
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.task_list{
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.task_list_item {
+  background: #fff;
+  margin: 10px 0;
+  border-radius: 70px;
+  width: 100%;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 10px 0 20px;
+}
+.task_list_wrapper {
+  width: 100%;
+}
+
+.form_wrapper {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+.task_list_btn_grp{
+  margin-left: auto;
+}
+
+.btn_check{
+  background: transparent;
+  border: 0;
+  color: green;
+  padding: 10px 10px;
+}
+.btn_dlt{
+  background: transparent;
+  border: 0;
+  color: red;
+  padding: 10px 10px;
+}
+.input_group{
+  position: relative;
+  z-index: 1;
+}
+.submit_btn{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 45px;
+
+}
+.input_fld{
+  width: 400px;
+  padding-right: 100px;
+  height: 45px;
+}
+.clear_btn{
+  height: 45px;
+}
+
+
+@media (min-width: 1280px){
+  .container{
+    max-width: 1000px !important;
+    width: 100%;
+    margin: 0 auto;
+    }
+}
